@@ -1,8 +1,8 @@
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import {translate} from '@docusaurus/Translate';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -11,14 +11,27 @@ function HomepageHeader() {
       <div className={styles.heroContainer}>
         <div className={styles.heroBlob} aria-hidden="true" />
         <Heading as="h1" className={styles.heroTitle}>
-          Documentación de <span className={styles.heroGradient}>URUBOTS</span>
+          {translate({
+            id: 'homepage.hero.titlePrefix',
+            message: 'Documentación de',
+            description: 'Hero title prefix on the homepage',
+          })}{' '}
+          <span className={styles.heroGradient}>URUBOTS</span>
         </Heading>
         <p className={styles.heroSubtitle}>
-          Equipo de competencias en robótica ubicado en UTEC.
+          {translate({
+            id: 'homepage.hero.subtitle',
+            message: 'Equipo de competencias en robótica ubicado en UTEC.',
+            description: 'Hero subtitle on the homepage',
+          })}
         </p>
         <div className={styles.buttons}>
           <Link className={styles.primaryButton} to="/docs/intro">
-            Empezar
+            {translate({
+              id: 'homepage.hero.cta',
+              message: 'Empezar',
+              description: 'Primary call-to-action button label',
+            })}
           </Link>
           <Link className={styles.secondaryButton} to="https://urubots.uy/">
             urubots.uy
@@ -30,11 +43,18 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="Documentación"
-      description="Documentación de UruBots, el equipo de robótica de UTEC.">
+      title={translate({
+        id: 'homepage.title',
+        message: 'Documentación',
+        description: 'Homepage document title',
+      })}
+      description={translate({
+        id: 'homepage.description',
+        message: 'Documentación de UruBots, el equipo de robótica de UTEC.',
+        description: 'Homepage meta description',
+      })}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

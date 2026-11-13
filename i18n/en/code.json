@@ -1,0 +1,46 @@
+{
+  "homepage.title": {
+    "message": "Documentation",
+    "description": "Homepage document title"
+  },
+  "homepage.description": {
+    "message": "UruBots documentation, the robotics team at UTEC.",
+    "description": "Homepage meta description"
+  },
+  "homepage.hero.titlePrefix": {
+    "message": "Documentation of",
+    "description": "Hero title prefix on the homepage"
+  },
+  "homepage.hero.subtitle": {
+    "message": "Robotics competition team based at UTEC.",
+    "description": "Hero subtitle on the homepage"
+  },
+  "homepage.hero.cta": {
+    "message": "Get started",
+    "description": "Primary call-to-action button label"
+  },
+  "homepage.features.welcome.title": {
+    "message": "Welcome",
+    "description": "Feature card title"
+  },
+  "homepage.features.welcome.description": {
+    "message": "Learn what UruBots is, the safety rules and what to do in your first week.",
+    "description": "Feature card description"
+  },
+  "homepage.features.routes.title": {
+    "message": "Learning paths",
+    "description": "Feature card title"
+  },
+  "homepage.features.routes.description": {
+    "message": "Practical courses on Git and GitHub, Linux and Python, ROS 2, autonomous cars and RoboCup @Home.",
+    "description": "Feature card description"
+  },
+  "homepage.features.templates.title": {
+    "message": "Templates & meetings",
+    "description": "Feature card title"
+  },
+  "homepage.features.templates.description": {
+    "message": "Standard templates for tasks, meeting minutes and technical decisions.",
+    "description": "Feature card description"
+  }
+}

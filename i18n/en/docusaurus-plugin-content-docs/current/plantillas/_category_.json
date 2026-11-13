@@ -1,0 +1,8 @@
+{
+  "label": "Templates",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Standard models for proposing tasks, resource records, meeting minutes and technical decisions."
+  }
+}

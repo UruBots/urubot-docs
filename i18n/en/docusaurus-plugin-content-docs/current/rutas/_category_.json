@@ -1,0 +1,8 @@
+{
+  "label": "Learning paths",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Short, practical courses on Git/GitHub, Linux and Python, ROS 2, autonomous cars and RoboCup @Home."
+  }
+}
