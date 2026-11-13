@@ -1,0 +1,8 @@
+{
+  "label": "Rutas formativas",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Cursos cortos y prácticos sobre Git/GitHub, Linux y Python, ROS 2, autos autónomos y RoboCup @Home."
+  }
+}

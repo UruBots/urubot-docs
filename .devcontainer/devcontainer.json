@@ -1,0 +1,33 @@
+{
+  "name": "urubot-docs",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "workspaceFolder": "/workspaces/urubot-docs",
+
+  "forwardPorts": [3000],
+
+  "mounts": [
+    "source=urubot-docs-pnpm-store,target=/pnpm/store,type=volume",
+    "source=urubot-docs-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+
+  "postCreateCommand": "pnpm install",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "unifiedjs.vscode-mdx",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "files.eol": "\n"
+      }
+    }
+  }
+}

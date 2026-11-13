@@ -1,0 +1,5 @@
+# Permite que estas dependencias corran sus scripts de build (postinstall)
+# necesarios para @swc/core (binario nativo) y core-js.
+onlyBuiltDependencies:
+  - '@swc/core'
+  - core-js

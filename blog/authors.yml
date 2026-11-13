@@ -1,0 +1,9 @@
+urubots:
+  name: Equipo UruBots
+  title: Equipo de robótica de UTEC
+  url: https://urubots.uy/
+  image_url: https://github.com/UruBots.png
+  page: true
+  socials:
+    github: UruBots
+    linkedin: urubots-utec-4a3267283

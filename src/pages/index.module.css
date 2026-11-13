@@ -1,0 +1,110 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 4rem;
+  background: var(--ifm-background-color);
+}
+
+.heroContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.heroBlob {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  background: linear-gradient(to right, #0ea5e9, #67e8f9);
+  filter: blur(80px);
+  opacity: 0.3;
+  top: -6rem;
+  right: -4rem;
+  z-index: 0;
+}
+
+.heroTitle {
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ifm-heading-color);
+  max-width: 20ch;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.heroGradient {
+  background: linear-gradient(to right, #2563eb, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme='dark'] .heroGradient {
+  background: linear-gradient(to right, #60a5fa, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  color: var(--ifm-font-color-secondary);
+  margin-top: 1.5rem;
+  max-width: 42ch;
+  position: relative;
+  z-index: 1;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.primaryButton {
+  display: inline-block;
+  border-radius: 9999px;
+  background: var(--ub-button-bg);
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.primaryButton:hover {
+  background: var(--ub-button-hover);
+  color: #fff;
+  text-decoration: none;
+}
+
+.secondaryButton {
+  display: inline-block;
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--ifm-font-color-base);
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: background 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}

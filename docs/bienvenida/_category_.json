@@ -1,0 +1,8 @@
+{
+  "label": "Bienvenida",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Conocé qué es UruBots, las normas de convivencia y seguridad, y qué hacer en tu primera semana."
+  }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/**
+ * Any CSS included here will be global. The classic template bundles Infima
+ * by default. Infima is a CSS framework designed to work well for
+ * content-centric websites.
+ *
+ * Tema basado en el sitio oficial de UruBots (https://urubots.uy/):
+ *  - Tipografía: Inter
+ *  - Color primario: #4A6CF7
+ *  - Botones: pill (rounded-full), navy #1e3a8a con hover azul #3b82f6
+ *  - Gradiente: azul #2563eb -> cian #06b6d4
+ */
+
+:root {
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  --ifm-heading-font-weight: 800;
+
+  /* UruBots primary (#4A6CF7) y su escala */
+  --ifm-color-primary: #4a6cf7;
+  --ifm-color-primary-dark: #3b5ce0;
+  --ifm-color-primary-darker: #2f4cc9;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #5f7df8;
+  --ifm-color-primary-lighter: #7690fa;
+  --ifm-color-primary-lightest: #a9bafc;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Botones estilo UruBots */
+  --ub-button-bg: #1e3a8a;
+  --ub-button-hover: #3b82f6;
+}
+
+/* Paleta para modo oscuro (por defecto) */
+[data-theme='dark'] {
+  --ifm-color-primary: #5f7df8;
+  --ifm-color-primary-dark: #4a6cf7;
+  --ifm-color-primary-darker: #3b5ce0;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #7690fa;
+  --ifm-color-primary-lighter: #8ba5fb;
+  --ifm-color-primary-lightest: #a9bafc;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+
+  --ub-button-bg: #3b82f6;
+  --ub-button-hover: #1e3a8a;
+}
+
+/* Botones en forma de píldora (rounded-full), como en urubots.uy */
+.button {
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.button--primary {
+  background-color: var(--ub-button-bg);
+  border-color: var(--ub-button-bg);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button--primary:hover {
+  background-color: var(--ub-button-hover);
+  border-color: var(--ub-button-hover);
+}
+
+/* Links y navegación con la fuente y peso correctos */
+.navbar__item {
+  font-weight: 500;
+}
+
+.navbar__brand {
+  margin-right: 1rem;
+}

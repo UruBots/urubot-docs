@@ -1,0 +1,8 @@
+{
+  "label": "Plantillas",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Modelos estándar para proponer tareas, fichas de recursos, actas de reunión y decisiones técnicas."
+  }
+}
